@@ -1,6 +1,6 @@
 import React from 'react';
 import CTA from '../Header/CTA';
-import san from '../Header/elavarasan-removebg-preview.png';
+import san from '../Header/IMG_20220909_162656_971-removebg-preview.pn';
 import HeaderSocials from '../Header/HeaderSocials';
 const Header = () => {
   return (
