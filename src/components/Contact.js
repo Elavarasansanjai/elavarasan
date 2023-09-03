@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { BsLinkedin } from 'react-icons/bs';
-import { MdOutlineEmail } from 'react-icons/md';
-import { BsWhatsapp } from 'react-icons/bs';
-import { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState }  from 'react';
+import { BsLinkedin }       from 'react-icons/bs';
+import { MdOutlineEmail }   from 'react-icons/md';
+import { BsWhatsapp }       from 'react-icons/bs';
+import { useRef }           from 'react';
+import emailjs              from 'emailjs-com';
+
 const Contact = () => {
-  const form = useRef();
+  
+  const form                = useRef();  
   const [status, setStatus] = useState(false);
   const [err, seterrStatus] = useState(false);
   const sendEmail = (e) => {
@@ -14,7 +16,6 @@ const Contact = () => {
     emailjs
       .sendForm(
         'service_tslky1a',
-
         'template_r9o1d18',
         form.current,
         'MtUTkhHM_Xz-hMj0E'
